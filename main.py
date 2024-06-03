@@ -10,7 +10,7 @@ def main():
     for _ in track(range(20), description="Loading..."):
         time.sleep(0.03)
 
-    while True:
+while True:
     Console().clear() # this will clear the screen
     message = "[b]Egg Farm Inventory System[/b]\n" \
               "-------------------------\n" \
