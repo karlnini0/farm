@@ -6,18 +6,23 @@ from rich.prompt import Prompt
 from rich.progress import track
 from rich.console import Console
 
+
 def main():
     for _ in track(range(20), description="Loading..."):
         time.sleep(0.03)
 
-while True:
-    Console().clear() # this will clear the screen
-    message = "[b]Egg Farm Inventory System[/b]\n" \
-              "-------------------------\n" \
-              "🌧 | 28°C | 89% RH"
-    print(Panel(message, expand=False))
 
+while True:
+
+    Console().clear()  # this will clear the screen
+    message = (
+        "[b]Egg Farm Inventory System[/b]\n"
+        "-------------------------\n"
+        "🌧 | 28°C | 89% RH"
+    )
+    print(Panel(message, expand=False))
     choices = ["1", "2", "3", "4"]
+
     print("[1] Add new batch")
     print("[2] Add new sales")
     print("[3] View Reports")
